@@ -31,7 +31,55 @@ export default defineType({
       type: 'reference',
       to: [{ type: 'destination' }],
       description: 'Ciudad donde está la propiedad',
+      validation: (Rule) => Rule.required(),
     }),
+
+    // ── CARD INFO ─────────────────────────────────────────
+    defineField({
+      name: 'locationEs',
+      title: 'Ubicación (Español)',
+      type: 'string',
+      description: 'Ej: Puerto Madero, Buenos Aires',
+    }),
+    defineField({
+      name: 'locationEn',
+      title: 'Ubicación (English)',
+      type: 'string',
+    }),
+    defineField({
+      name: 'beds',
+      title: 'Camas',
+      type: 'number',
+      description: 'Cantidad de camas',
+      validation: (Rule) => Rule.min(1),
+    }),
+    defineField({
+      name: 'baths',
+      title: 'Baños',
+      type: 'number',
+    }),
+    defineField({
+      name: 'pricePerNight',
+      title: 'Precio por noche (USD)',
+      type: 'number',
+      description: 'Solo el número. Ej: 85',
+    }),
+    defineField({
+      name: 'rating',
+      title: 'Calificación',
+      type: 'number',
+      description: 'Ej: 4.75',
+      validation: (Rule) => Rule.min(0).max(5),
+    }),
+    defineField({
+      name: 'hostifyUrl',
+      title: 'URL de Hostify',
+      type: 'url',
+      description: 'URL directa a esta propiedad en Hostify',
+      validation: (Rule) => Rule.required(),
+    }),
+
+    // ── IMÁGENES ──────────────────────────────────────────
     defineField({
       name: 'images',
       title: 'Imágenes',
@@ -40,6 +88,8 @@ export default defineType({
       description: 'La primera imagen es la principal',
       validation: (Rule) => Rule.required().min(1),
     }),
+
+    // ── DESCRIPCIÓN ───────────────────────────────────────
     defineField({
       name: 'descriptionEs',
       title: 'Descripción (Español)',
@@ -52,13 +102,8 @@ export default defineType({
       type: 'array',
       of: [{ type: 'block' }],
     }),
-    defineField({
-      name: 'hostifyUrl',
-      title: 'URL de Hostify',
-      type: 'url',
-      description: 'URL directa a esta propiedad en Hostify',
-      validation: (Rule) => Rule.required(),
-    }),
+
+    // ── DESTACADA ─────────────────────────────────────────
     defineField({
       name: 'featured',
       title: '¿Propiedad destacada?',
@@ -70,15 +115,14 @@ export default defineType({
       name: 'featuredOrder',
       title: 'Orden en carrusel destacadas',
       type: 'number',
-      description: 'Solo aplica si es propiedad destacada (1, 2, 3...)',
       hidden: ({ document }) => !document?.featured,
     }),
   ],
   orderings: [
     {
-      title: 'Orden destacadas',
-      name: 'featuredOrderAsc',
-      by: [{ field: 'featuredOrder', direction: 'asc' }],
+      title: 'Precio ascendente',
+      name: 'priceAsc',
+      by: [{ field: 'pricePerNight', direction: 'asc' }],
     },
   ],
   preview: {

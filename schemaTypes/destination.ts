@@ -47,6 +47,57 @@ export default defineType({
       type: 'number',
       description: 'Número para ordenar (1, 2, 3...)',
       initialValue: 1,
+    }), // ── PÁGINA DE DESTINO ─────────────────────────────────
+    defineField({
+      name: 'heroImage',
+      title: 'Página — Foto hero (full-width)',
+      type: 'image',
+      options: { hotspot: true },
+      description: 'Foto grande que aparece en el hero de la página del destino',
+    }),
+    defineField({
+      name: 'descriptionEs',
+      title: 'Página — Descripción (Español)',
+      type: 'text',
+      rows: 4,
+      description: 'Texto descriptivo del destino que aparece debajo del título',
+    }),
+    defineField({
+      name: 'descriptionEn',
+      title: 'Página — Descripción (English)',
+      type: 'text',
+      rows: 4,
+    }),
+    defineField({
+      name: 'separatorImage',
+      title: 'Página — Foto separadora (entre grilla y otros destinos)',
+      type: 'image',
+      options: { hotspot: true },
+    }),
+
+    // ── TEXTOS DE SECCIÓN ─────────────────────────────────
+    defineField({
+      name: 'propertiesTitleEs',
+      title: 'Página — Título grilla propiedades (Español)',
+      type: 'string',
+      description: 'Ej: Encontrá la propiedad ideal en Buenos Aires',
+    }),
+    defineField({
+      name: 'propertiesTitleEn',
+      title: 'Página — Título grilla propiedades (English)',
+      type: 'string',
+    }),
+    defineField({
+      name: 'otherDestinationsTitleEs',
+      title: 'Página — Título otros destinos (Español)',
+      type: 'string',
+      initialValue: 'Descubrí otros destinos exclusivos donde operamos',
+    }),
+    defineField({
+      name: 'otherDestinationsTitleEn',
+      title: 'Página — Título otros destinos (English)',
+      type: 'string',
+      initialValue: 'Discover other exclusive destinations where we operate',
     }),
   ],
   orderings: [

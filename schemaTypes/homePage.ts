@@ -2,7 +2,7 @@ import { defineField, defineType } from 'sanity'
 
 export default defineType({
     name: 'homePage',
-    title: 'Home Page',
+    title: 'Página Home',
     type: 'document',
     fields: [
         // ── HERO ──────────────────────────────────────────────
@@ -42,7 +42,6 @@ export default defineType({
             title: 'Hero — Botón CTA (texto)',
             type: 'string',
             description: 'Ej: Reservar',
-            initialValue: 'Reservar',
         }),
         defineField({
             name: 'heroCtaUrl',
@@ -121,14 +120,12 @@ export default defineType({
             title: 'Destinos — Eyebrow (sobre el título) (Español)',
             type: 'string',
             description: 'Texto pequeño arriba del título. Ej: Destinos',
-            initialValue: 'Destinos',
         }),
         defineField({
             name: 'destinationsEyebrowEn',
             title: 'Destinos — Eyebrow (sobre el título) (English)',
             type: 'string',
             description: 'Texto pequeño arriba del título. Ej: Destinos',
-            initialValue: 'Destinos',
         }),
         defineField({
             name: 'destinationsTitleEs',
@@ -147,13 +144,12 @@ export default defineType({
             title: 'Destinos — Texto "Explorar" (Español)',
             type: 'string',
             description: 'Texto del link bajo cada card. Ej: Explorar',
-            initialValue: 'Explorar',
         }),
         defineField({
             name: 'destinationsExploreLabelEn',
             title: 'Destinos — Texto "Explore" (English)',
             type: 'string',
-            initialValue: 'Explore',
+            description: 'Explore',
         }),
         defineField({
             name: 'destinationsFooterLabelEs',
@@ -173,25 +169,25 @@ export default defineType({
             name: 'featuredEyebrowEs',
             title: 'Destacadas — Eyebrow (Español)',
             type: 'string',
-            initialValue: 'Propiedades destacadas',
+            description: 'Propiedades destacadas',
         }),
         defineField({
             name: 'featuredEyebrowEn',
             title: 'Destacadas — Eyebrow (English)',
             type: 'string',
-            initialValue: 'Featured Properties',
+            description: 'Featured Properties',
         }),
         defineField({
             name: 'featuredReserveLabelEs',
             title: 'Destacadas — Botón reservar (Español)',
             type: 'string',
-            initialValue: 'Reservar propiedad',
+            description: 'Reservar propiedad',
         }),
         defineField({
             name: 'featuredReserveLabelEn',
             title: 'Destacadas — Botón reservar (English)',
             type: 'string',
-            initialValue: 'Reserve property',
+            description: 'Reserve property',
         }),
 
         // ── EXPERIENCE SECTION ────────────────────────────────
@@ -199,13 +195,13 @@ export default defineType({
             name: 'experienceEyebrowEs',
             title: 'Experiencia — Eyebrow (Español)',
             type: 'string',
-            initialValue: 'Experiencia BTH',
+            description: 'Experiencia BTH',
         }),
         defineField({
             name: 'experienceEyebrowEn',
             title: 'Experiencia — Eyebrow (English)',
             type: 'string',
-            initialValue: 'BTH Experience',
+            description: 'BTH Experience',
         }),
         defineField({
             name: 'experienceTitleEs',
@@ -240,7 +236,7 @@ export default defineType({
                                 ],
                                 layout: 'radio',
                             },
-                            initialValue: 'image',
+                            description: 'image',
                             validation: (Rule: any) => Rule.required(),
                         },
                         {
@@ -376,13 +372,13 @@ export default defineType({
             name: 'bookNowLabelEs',
             title: 'Book Now — Texto del botón (Español)',
             type: 'string',
-            initialValue: 'BOOK NOW',
+            description: 'BOOK NOW',
         }),
         defineField({
             name: 'bookNowLabelEn',
             title: 'Book Now — Texto del botón (English)',
             type: 'string',
-            initialValue: 'BOOK NOW',
+            description: 'BOOK NOW',
         }),
         defineField({
             name: 'footerTaglineEs',
@@ -439,47 +435,15 @@ export default defineType({
             name: 'footerCopyrightEs',
             title: 'Footer — Copyright (Español)',
             type: 'string',
-            initialValue: '© Better Together Homes | Todos los derechos reservados.',
+            description: '© Better Together Homes | Todos los derechos reservados.',
         }),
         defineField({
             name: 'footerCopyrightEn',
             title: 'Footer — Copyright (English)',
             type: 'string',
-            initialValue: '© Better Together Homes | All rights reserved.',
+            description: '© Better Together Homes | All rights reserved.',
         }),
-
-        // ── ABOUT ─────────────────────────────────────────────
-        defineField({
-            name: 'aboutImage',
-            title: 'Quiénes somos — Imagen',
-            type: 'image',
-            options: { hotspot: true },
-        }),
-        defineField({
-            name: 'aboutTitleEs',
-            title: 'Quiénes somos — Título (Español)',
-            type: 'string',
-            initialValue: 'Quiénes somos',
-        }),
-        defineField({
-            name: 'aboutTitleEn',
-            title: 'Quiénes somos — Título (English)',
-            type: 'string',
-            initialValue: 'About us',
-        }),
-        defineField({
-            name: 'aboutBodyEs',
-            title: 'Quiénes somos — Texto (Español)',
-            type: 'array',
-            of: [{ type: 'block' }],
-        }),
-        defineField({
-            name: 'aboutBodyEn',
-            title: 'Quiénes somos — Texto (English)',
-            type: 'array',
-            of: [{ type: 'block' }],
-        }),
-
+       
         // ── SEO ───────────────────────────────────────────────
         defineField({
             name: 'seoTitleEs',
