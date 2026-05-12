@@ -47,7 +47,9 @@ export default defineType({
       type: 'number',
       description: 'Número para ordenar (1, 2, 3...)',
       initialValue: 1,
-    }), // ── PÁGINA DE DESTINO ─────────────────────────────────
+    }),
+    
+    // ── PÁGINA DE DESTINO ─────────────────────────────────
     defineField({
       name: 'heroImage',
       title: 'Página — Foto hero (full-width)',

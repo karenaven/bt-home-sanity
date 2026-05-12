@@ -23,18 +23,6 @@ export default defineType({
 
     // ── HERO ──────────────────────────────────────────────
     defineField({
-      name: 'heroEyebrowEs',
-      title: 'Hero — Eyebrow (Español)',
-      type: 'string',
-      initialValue: 'Propietarios',
-    }),
-    defineField({
-      name: 'heroEyebrowEn',
-      title: 'Hero — Eyebrow (English)',
-      type: 'string',
-      initialValue: 'Owners',
-    }),
-    defineField({
       name: 'heroTitleEs',
       title: 'Hero — Título (Español)',
       type: 'string',
@@ -64,18 +52,6 @@ export default defineType({
     }),
 
     // ── DIFERENCIAL (grilla 01-06) ─────────────────────────
-    defineField({
-      name: 'differentialEyebrowEs',
-      title: 'Diferencial — Eyebrow (Español)',
-      type: 'string',
-      initialValue: 'Nuestro diferencial',
-    }),
-    defineField({
-      name: 'differentialEyebrowEn',
-      title: 'Diferencial — Eyebrow (English)',
-      type: 'string',
-      initialValue: 'Our differentiator',
-    }),
     defineField({
       name: 'differentialTitleEs',
       title: 'Diferencial — Título (Español)',
@@ -133,18 +109,6 @@ export default defineType({
 
     // ── FILOSOFÍA ─────────────────────────────────────────
     defineField({
-      name: 'philosophyEyebrowEs',
-      title: 'Filosofía — Eyebrow (Español)',
-      type: 'string',
-      initialValue: 'Nuestra filosofía',
-    }),
-    defineField({
-      name: 'philosophyEyebrowEn',
-      title: 'Filosofía — Eyebrow (English)',
-      type: 'string',
-      initialValue: 'Our philosophy',
-    }),
-    defineField({
       name: 'philosophyTextEs',
       title: 'Filosofía — Texto centrado (Español)',
       type: 'text',
@@ -169,18 +133,6 @@ export default defineType({
     }),
 
     // ── FEATURED PROPERTY (split debajo del video) ─────────
-    defineField({
-      name: 'featuredPropertyEyebrowEs',
-      title: 'Propiedad destacada — Eyebrow (Español)',
-      type: 'string',
-      initialValue: 'Propiedades destacadas',
-    }),
-    defineField({
-      name: 'featuredPropertyEyebrowEn',
-      title: 'Propiedad destacada — Eyebrow (English)',
-      type: 'string',
-      initialValue: 'Featured Properties',
-    }),
     defineField({
       name: 'featuredPropertyTitleEs',
       title: 'Propiedad destacada — Título (Español)',
@@ -236,18 +188,6 @@ export default defineType({
 
     // ── REVENUE MANAGEMENT ────────────────────────────────
     defineField({
-      name: 'revenueEyebrowEs',
-      title: 'Revenue — Eyebrow (Español)',
-      type: 'string',
-      initialValue: 'Revenue management activo',
-    }),
-    defineField({
-      name: 'revenueEyebrowEn',
-      title: 'Revenue — Eyebrow (English)',
-      type: 'string',
-      initialValue: 'Active revenue management',
-    }),
-    defineField({
       name: 'revenueTitleEs',
       title: 'Revenue — Título (Español)',
       type: 'string',
@@ -278,18 +218,6 @@ export default defineType({
 
     // ── SERVICIOS (3 cards con foto) ──────────────────────
     defineField({
-      name: 'servicesEyebrowEs',
-      title: 'Servicios — Eyebrow (Español)',
-      type: 'string',
-      initialValue: 'Servicios',
-    }),
-    defineField({
-      name: 'servicesEyebrowEn',
-      title: 'Servicios — Eyebrow (English)',
-      type: 'string',
-      initialValue: 'Services',
-    }),
-    defineField({
       name: 'servicesTitleEs',
       title: 'Servicios — Título (Español)',
       type: 'string',
@@ -313,8 +241,6 @@ export default defineType({
           { name: 'subtitleEn', title: 'Subtítulo itálica (English)', type: 'string' },
           { name: 'descriptionEs', title: 'Descripción (Español)', type: 'text', rows: 3 },
           { name: 'descriptionEn', title: 'Descripción (English)', type: 'text', rows: 3 },
-          { name: 'readMoreLabelEs', title: 'Botón "Leer más" (Español)', type: 'string', initialValue: 'Leer más' },
-          { name: 'readMoreLabelEn', title: 'Botón "Read more" (English)', type: 'string', initialValue: 'Read more' },
           { name: 'readMoreUrl', title: 'URL del botón', type: 'url' },
         ],
         preview: { select: { title: 'titleEs', media: 'image' } },

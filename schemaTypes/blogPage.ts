@@ -28,19 +28,7 @@ export default defineType({
       title: 'Descripción (English)',
       type: 'string',
       description: 'Brief description of the blog page',
-    }),
-    defineField({
-      name: 'readMoreLabelEs',
-      title: 'Label "Leer más" (Español)',
-      type: 'string',
-      initialValue: 'Leer más',
-    }),
-    defineField({
-      name: 'readMoreLabelEn',
-      title: 'Label "Read more" (English)',
-      type: 'string',
-      initialValue: 'Read more',
-    }),
+    })
   ],
   preview: {
     select: { title: 'titleEs' },

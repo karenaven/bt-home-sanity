@@ -163,18 +163,6 @@ export default defineType({
 
     // ── DIFERENCIAL ───────────────────────────────────────
     defineField({
-      name: 'differentialEyebrowEs',
-      title: 'Diferencial — Eyebrow (Español)',
-      type: 'string',
-      initialValue: 'Nuestro diferencial',
-    }),
-    defineField({
-      name: 'differentialEyebrowEn',
-      title: 'Diferencial — Eyebrow (English)',
-      type: 'string',
-      initialValue: 'Our differentiator',
-    }),
-    defineField({
       name: 'differentialTitleEs',
       title: 'Diferencial — Título (Español)',
       type: 'string',

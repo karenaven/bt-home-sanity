@@ -38,95 +38,13 @@ export default defineType({
             type: 'string',
         }),
         defineField({
-            name: 'heroCtaLabel',
-            title: 'Hero — Botón CTA (texto)',
-            type: 'string',
-            description: 'Ej: Reservar',
-        }),
-        defineField({
             name: 'heroCtaUrl',
             title: 'Hero — Botón CTA (URL Hostify)',
             type: 'url',
             description: 'URL de Hostify para reservas',
         }),
 
-        //--SEARCH ────────────────────────────────────────────
-        defineField({
-            name: 'destination',
-            title: 'Destino — Placeholder',
-            type: 'string',
-            description: 'Ej: Destino'
-        }),
-
-        defineField({
-            name: 'checkInEs',
-            title: 'Check-in — Placeholder (Español)',
-            type: 'string',
-            description: 'Ej: Check-in'
-        }),
-
-        defineField({
-            name: 'checkInEn',
-            title: 'Check-in — Placeholder (English)',
-            type: 'string',
-            description: 'Ej: Check-in'
-        }),
-
-        defineField({
-            name: 'checkOutEs',
-            title: 'Check-out — Placeholder (Español)',
-            type: 'string',
-            description: 'Ej: Check-out'
-        }),
-
-        defineField({
-            name: 'checkOutEn',
-            title: 'Check-out — Placeholder (English)',
-            type: 'string',
-            description: 'Ej: Check-out'
-        }),
-
-        defineField({
-            name: 'guestsEs',
-            title: 'Huéspedes — Placeholder (Español)',
-            type: 'string',
-            description: 'Ej: Huéspedes'
-        }),
-
-        defineField({
-            name: 'guestsEn',
-            title: 'Huéspedes — Placeholder (English)',
-            type: 'string',
-            description: 'Ej: Guests'
-        }),
-
-        defineField({
-            name: 'searchEs',
-            title: 'Botón de búsqueda — Label (Español)',
-            type: 'string',
-            description: 'Ej: Buscar',
-        }),
-
-        defineField({
-            name: 'searchEn',
-            title: 'Botón de búsqueda — Label (English)',
-            type: 'string',
-            description: 'Ej: Search',
-        }),
-
         // ── DESTINATIONS SECTION ──────────────────────────────
-        defineField({
-            name: 'destinationsEyebrowEs',
-            title: 'Destinos — Eyebrow (sobre el título) (Español)',
-            type: 'string',
-            description: 'Texto pequeño arriba del título. Ej: Destinos',
-        }),
-        defineField({
-            name: 'destinationsEyebrowEn',
-            title: 'Destinos — Eyebrow (sobre el título) (English)',
-            type: 'string',
-            description: 'Texto pequeño arriba del título. Ej: Destinos',
-        }),
         defineField({
             name: 'destinationsTitleEs',
             title: 'Destinos — Título sección (Español)',
@@ -164,45 +82,7 @@ export default defineType({
             description: 'Ej: Selected spaces in destinations that inspire, designed so that every stay is experienced with comfort, design and the care that distinguishes BT Homes.',
         }),
 
-        // ── FEATURED PROPERTIES ───────────────────────────────
-        defineField({
-            name: 'featuredEyebrowEs',
-            title: 'Destacadas — Eyebrow (Español)',
-            type: 'string',
-            description: 'Propiedades destacadas',
-        }),
-        defineField({
-            name: 'featuredEyebrowEn',
-            title: 'Destacadas — Eyebrow (English)',
-            type: 'string',
-            description: 'Featured Properties',
-        }),
-        defineField({
-            name: 'featuredReserveLabelEs',
-            title: 'Destacadas — Botón reservar (Español)',
-            type: 'string',
-            description: 'Reservar propiedad',
-        }),
-        defineField({
-            name: 'featuredReserveLabelEn',
-            title: 'Destacadas — Botón reservar (English)',
-            type: 'string',
-            description: 'Reserve property',
-        }),
-
         // ── EXPERIENCE SECTION ────────────────────────────────
-        defineField({
-            name: 'experienceEyebrowEs',
-            title: 'Experiencia — Eyebrow (Español)',
-            type: 'string',
-            description: 'Experiencia BTH',
-        }),
-        defineField({
-            name: 'experienceEyebrowEn',
-            title: 'Experiencia — Eyebrow (English)',
-            type: 'string',
-            description: 'BTH Experience',
-        }),
         defineField({
             name: 'experienceTitleEs',
             title: 'Experiencia — Título (Español)',
@@ -367,19 +247,7 @@ export default defineType({
             description: 'Podés agregar las fotos que quieras — se muestran como carrusel',
         }),
 
-        // ── BOOK NOW + FOOTER ─────────────────────────────────
-        defineField({
-            name: 'bookNowLabelEs',
-            title: 'Book Now — Texto del botón (Español)',
-            type: 'string',
-            description: 'BOOK NOW',
-        }),
-        defineField({
-            name: 'bookNowLabelEn',
-            title: 'Book Now — Texto del botón (English)',
-            type: 'string',
-            description: 'BOOK NOW',
-        }),
+        // ── FOOTER ─────────────────────────────────
         defineField({
             name: 'footerTaglineEs',
             title: 'Footer — Tagline (Español)',

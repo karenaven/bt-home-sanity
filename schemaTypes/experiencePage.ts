@@ -8,18 +8,6 @@ export default defineType({
 
         // ── HERO ──────────────────────────────────────────────
         defineField({
-            name: 'heroEyebrowEs',
-            title: 'Hero — Eyebrow (Español)',
-            type: 'string',
-            description: 'Experiencia BTH',
-        }),
-        defineField({
-            name: 'heroEyebrowEn',
-            title: 'Hero — Eyebrow (English)',
-            type: 'string',
-            description: 'Experience BTH',
-        }),
-        defineField({
             name: 'heroTitleEs',
             title: 'Hero — Título (Español)',
             type: 'string',
