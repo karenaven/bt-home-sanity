@@ -16,14 +16,16 @@ export default defineType({
         defineField({
             name: 'heroTitleEs',
             title: 'Hero — Título (Español)',
-            type: 'string',
+            type: 'text',
+            rows: 3,
             description: 'Ej: Sentirse en casa, estés donde estés',
             validation: (Rule) => Rule.required(),
         }),
         defineField({
             name: 'heroTitleEn',
             title: 'Hero — Título (English)',
-            type: 'string',
+            type: 'text',
+            rows: 3,
             description: 'Ej: Feel at home, wherever you are',
             validation: (Rule) => Rule.required(),
         }),
@@ -311,7 +313,7 @@ export default defineType({
             type: 'string',
             description: '© Better Together Homes | All rights reserved.',
         }),
-       
+
         // ── SEO ───────────────────────────────────────────────
         defineField({
             name: 'seoTitleEs',

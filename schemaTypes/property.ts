@@ -72,10 +72,10 @@ export default defineType({
       validation: (Rule) => Rule.min(0).max(5),
     }),
     defineField({
-      name: 'hostifyUrl',
-      title: 'URL de Hostify',
-      type: 'url',
-      description: 'URL directa a esta propiedad en Hostify',
+      name: 'idPropertyHostify',
+      title: 'ID de Propiedad en Hostify',
+      type: 'number',
+      description: 'ID único de la propiedad en Hostify',
       validation: (Rule) => Rule.required(),
     }),
 
