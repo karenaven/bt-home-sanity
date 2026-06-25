@@ -8,6 +8,7 @@ import contactPage from "./contactPage";
 import blogPage from "./blogPage";
 import blogPost from "./blogPost";
 import commonTranslations from "./commonTranslations";
+import amenities from "./amenities";
 
 export const schemaTypes = [homePage, destination, property, experiencePage, aboutPage, ownersPage, contactPage,
-    blogPage, blogPost, commonTranslations]
+    blogPage, blogPost, commonTranslations, amenities];

@@ -112,6 +112,76 @@ export default defineType({
         },
       ],
     }),
+    
+    defineField({
+      name: 'coverImage2',
+      title: 'Imagen 2',
+      type: 'image',
+      options: { hotspot: true },
+      validation: (Rule) => Rule.required(),
+    }),
+    
+    defineField({
+      name: 'coverImage3',
+      title: 'Imagen 3',
+      type: 'image',
+      options: { hotspot: true },
+      validation: (Rule) => Rule.required(),
+    }),
+    
+    defineField({
+      name: 'coverImage4',
+      title: 'Imagen 4',
+      type: 'image',
+      options: { hotspot: true },
+      validation: (Rule) => Rule.required(),
+    }),
+    
+    defineField({
+      name: 'bodyEs2',
+      title: 'Contenido 2 completo (Español)',
+      type: 'array',
+      of: [
+        { type: 'block' },
+        {
+          type: 'image',
+          options: { hotspot: true },
+          fields: [
+            {
+              name: 'caption',
+              type: 'string',
+              title: 'Epígrafe',
+            },
+          ],
+        },
+      ],
+    }),
+    defineField({
+      name: 'bodyEn2',
+      title: 'Contenido 2 completo (English)',
+      type: 'array',
+      of: [
+        { type: 'block' },
+        {
+          type: 'image',
+          options: { hotspot: true },
+          fields: [
+            {
+              name: 'caption',
+              type: 'string',
+              title: 'Caption',
+            },
+          ],
+        },
+      ],
+    }),
+    defineField({
+      name: 'coverImage5',
+      title: 'Imagen 5',
+      type: 'image',
+      options: { hotspot: true },
+      validation: (Rule) => Rule.required(),
+    }),
     defineField({
       name: 'publishedAt',
       title: 'Fecha de publicación',

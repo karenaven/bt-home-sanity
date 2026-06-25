@@ -123,6 +123,13 @@ export default defineType({
       description: 'En Google Maps: Compartir → Incorporar un mapa → copiá el src del iframe',
     }),
 
+     defineField({
+      name: 'mapEmbedUrl2',
+      title: 'Google Maps — URL del embed Ubicación 2',
+      type: 'url',
+      description: 'En Google Maps: Compartir → Incorporar un mapa → copiá el src del iframe',
+    }),
+
     // ── SEO ───────────────────────────────────────────────
     defineField({
       name: 'seoTitleEs',
