@@ -50,13 +50,15 @@ export default defineType({
         defineField({
             name: 'destinationsTitleEs',
             title: 'Destinos — Título sección (Español)',
-            type: 'string',
+            type: 'text',
+            rows: 2,
             description: 'Ej: Su estadía perfecta lo espera en nuestros destinos seleccionados',
         }),
         defineField({
             name: 'destinationsTitleEn',
             title: 'Destinos — Título sección (English)',
-            type: 'string',
+            type: 'text',
+            rows: 2,
             description: 'Ej: Your perfect stay awaits in our selected destinations',
         }),
         defineField({
@@ -88,13 +90,15 @@ export default defineType({
         defineField({
             name: 'experienceTitleEs',
             title: 'Experiencia — Título (Español)',
-            type: 'string',
+            type: 'text',
+            rows: 2,
             description: 'Ej: Hospitalidad pensada en cada detalle',
         }),
         defineField({
             name: 'experienceTitleEn',
             title: 'Experiencia — Título (English)',
-            type: 'string',
+            type: 'text',
+            rows: 2,
             description: 'Ej: Hospitality crafted in every detail',
         }),
         defineField({

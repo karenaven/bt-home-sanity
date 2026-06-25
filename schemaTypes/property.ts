@@ -8,14 +8,16 @@ export default defineType({
     defineField({
       name: 'nameEs',
       title: 'Nombre (Español)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
       description: 'Ej: Conesa 3470, Buenos Aires',
       validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'nameEn',
       title: 'Nombre (English)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
       validation: (Rule) => Rule.required(),
     }),
     defineField({

@@ -10,13 +10,15 @@ export default defineType({
         defineField({
             name: 'heroTitleEs',
             title: 'Hero — Título (Español)',
-            type: 'string',
+            type: 'text',
+            rows: 2,
             validation: (Rule) => Rule.required(),
         }),
         defineField({
             name: 'heroTitleEn',
             title: 'Hero — Título (English)',
-            type: 'string',
+            type: 'text',
+            rows: 2,
         }),
         defineField({
             name: 'heroSubtitleEs',
@@ -117,12 +119,14 @@ export default defineType({
         defineField({
             name: 'includesTitleEs',
             title: 'Incluye — Título (Español)',
-            type: 'string',
+            type: 'text',
+            rows: 2,
         }),
         defineField({
             name: 'includesTitleEn',
             title: 'Incluye — Título (English)',
-            type: 'string',
+            type: 'text',
+            rows: 2,
         }),
         defineField({
             name: 'includesDescriptionEs',
@@ -172,12 +176,14 @@ export default defineType({
         defineField({
             name: 'servicesTitleEs',
             title: 'Servicios — Título (Español)',
-            type: 'string',
+            type: 'text',
+            rows: 2,
         }),
         defineField({
             name: 'servicesTitleEn',
             title: 'Servicios — Título (English)',
-            type: 'string',
+            type: 'text',
+            rows: 2,
         }),
         defineField({
             name: 'services',

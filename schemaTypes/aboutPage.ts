@@ -10,14 +10,16 @@ export default defineType({
     defineField({
       name: 'heroTitleEs',
       title: 'Hero — Título (Español)',
-      type: 'string',
+      type: 'text',
+      rows: 3,
       description: 'Ej: Diseñamos experiencias que mejoran cada estadía y fortalecen tu inversión.',
       validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'heroTitleEn',
       title: 'Hero — Título (English)',
-      type: 'string',
+      type: 'text',
+      rows: 3,
     }),
     defineField({
       name: 'heroImage',
@@ -165,12 +167,14 @@ export default defineType({
     defineField({
       name: 'differentialTitleEs',
       title: 'Diferencial — Título (Español)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
     }),
     defineField({
       name: 'differentialTitleEn',
       title: 'Diferencial — Título (English)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
     }),
     defineField({
       name: 'differentialBodyEs',

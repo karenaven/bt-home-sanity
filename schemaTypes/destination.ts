@@ -92,13 +92,15 @@ export default defineType({
     defineField({
       name: 'otherDestinationsTitleEs',
       title: 'Página — Título otros destinos (Español)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
       initialValue: 'Descubrí otros destinos exclusivos donde operamos',
     }),
     defineField({
       name: 'otherDestinationsTitleEn',
       title: 'Página — Título otros destinos (English)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
       initialValue: 'Discover other exclusive destinations where we operate',
     }),
   ],

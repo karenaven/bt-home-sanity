@@ -25,23 +25,27 @@ export default defineType({
     defineField({
       name: 'heroTitleEs',
       title: 'Hero — Título (Español)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
       validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'heroTitleEn',
       title: 'Hero — Título (English)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
     }),
     defineField({
       name: 'heroSubtitleEs',
       title: 'Hero — Subtítulo (Español)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
     }),
     defineField({
       name: 'heroSubtitleEn',
       title: 'Hero — Subtítulo (English)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
     }),
     defineField({
       name: 'heroImage',
@@ -55,12 +59,14 @@ export default defineType({
     defineField({
       name: 'differentialTitleEs',
       title: 'Diferencial — Título (Español)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
     }),
     defineField({
       name: 'differentialTitleEn',
       title: 'Diferencial — Título (English)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
     }),
     defineField({
       name: 'differentialItems',
@@ -87,12 +93,14 @@ export default defineType({
     defineField({
       name: 'splitTitleEs',
       title: 'Split — Título (Español)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
     }),
     defineField({
       name: 'splitTitleEn',
       title: 'Split — Título (English)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
     }),
     defineField({
       name: 'splitBodyEs',
@@ -136,12 +144,14 @@ export default defineType({
     defineField({
       name: 'featuredPropertyTitleEs',
       title: 'Propiedad destacada — Título (Español)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
     }),
     defineField({
       name: 'featuredPropertyTitleEn',
       title: 'Propiedad destacada — Título (English)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
     }),
     defineField({
       name: 'featuredPropertyDescEs',
@@ -165,12 +175,14 @@ export default defineType({
     defineField({
       name: 'pricelabsTitleEs',
       title: 'PriceLabs — Título (Español)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
     }),
     defineField({
       name: 'pricelabsTitleEn',
       title: 'PriceLabs — Título (English)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
     }),
     defineField({
       name: 'pricelabsFeatures',
@@ -190,12 +202,14 @@ export default defineType({
     defineField({
       name: 'revenueTitleEs',
       title: 'Revenue — Título (Español)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
     }),
     defineField({
       name: 'revenueTitleEn',
       title: 'Revenue — Título (English)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
     }),
     defineField({
       name: 'revenueBodyEs',
@@ -220,12 +234,14 @@ export default defineType({
     defineField({
       name: 'servicesTitleEs',
       title: 'Servicios — Título (Español)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
     }),
     defineField({
       name: 'servicesTitleEn',
       title: 'Servicios — Título (English)',
-      type: 'string',
+      type: 'text',
+      rows: 2,
     }),
     defineField({
       name: 'services',
@@ -272,13 +288,13 @@ export default defineType({
       name: 'highlightDescriptionEs',
       title: 'Verde — Texto derecho pequeño (Español)',
       type: 'text',
-      rows: 2,
+      rows: 3,
     }),
     defineField({
       name: 'highlightDescriptionEn',
       title: 'Verde — Texto derecho pequeño (English)',
       type: 'text',
-      rows: 2,
+      rows: 3,
     }),
 
     // ── FAQ ───────────────────────────────────────────────

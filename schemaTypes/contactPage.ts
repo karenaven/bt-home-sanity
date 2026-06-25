@@ -23,13 +23,13 @@ export default defineType({
       name: 'descriptionEs',
       title: 'Descripción (Español)',
       type: 'text',
-      rows: 3,
+      rows: 2,
     }),
     defineField({
       name: 'descriptionEn',
       title: 'Descripción (English)',
       type: 'text',
-      rows: 3,
+      rows: 2,
     }),
     defineField({
       name: 'image',
