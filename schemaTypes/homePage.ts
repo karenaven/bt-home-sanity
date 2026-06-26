@@ -39,12 +39,6 @@ export default defineType({
             title: 'Hero — Subtítulo (English)',
             type: 'string',
         }),
-        defineField({
-            name: 'heroCtaUrl',
-            title: 'Hero — Botón CTA (URL Hostify)',
-            type: 'url',
-            description: 'URL de Hostify para reservas',
-        }),
 
         // ── DESTINATIONS SECTION ──────────────────────────────
         defineField({

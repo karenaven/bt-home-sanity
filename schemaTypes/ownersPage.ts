@@ -141,6 +141,12 @@ export default defineType({
     }),
 
     // ── FEATURED PROPERTY (split debajo del video) ─────────
+     defineField({
+      name: 'HostifyEyebrow',
+      title: 'Hostify Eyebrow',
+      type: 'string',
+      initialValue: 'HOSTIFY',
+    }),
     defineField({
       name: 'featuredPropertyTitleEs',
       title: 'Propiedad destacada — Título (Español)',
