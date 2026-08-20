@@ -20,6 +20,20 @@ export default defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: 'country',
+      title: 'País',
+      type: 'string',
+      description: 'País al que pertenece este destino',
+      options: {
+        list: [
+          { title: 'Argentina', value: 'Argentina' },
+          { title: 'México', value: 'Mexico' },
+        ],
+        layout: 'radio',
+      },
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
       name: 'slug',
       title: 'Slug (URL)',
       type: 'slug',
